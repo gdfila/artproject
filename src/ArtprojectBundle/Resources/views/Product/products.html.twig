@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Art-Space-pricing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ asset('css/normalize.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/tooltipster.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main-2.css') }}">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="{{ asset('css/mobile.css') }}" />
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div id="logo">
+                <a href="#"><img src="{{ asset('img/logo.png') }}" alt="logo art-space"/></a>
+            </div>
+            <nav id="menu" >
+                <a href="#">login</a>
+                <a href="{{path('artspace_categories') }}">categories</a>
+                <a href="#">developers</a>
+                <a href="#">templates</a>
+                <a href="{{path('artspace_index') }}">tour</a>
+            </nav>
+        </div>    
+    </header>
+                <p>{{categorie}}</p>
+<ul>
+    
+  {% for machin in listproduct %}
+      <p>produits :<a href=" {{ path('artspace_details', {'id':machin.id} ) }}">{{ machin.title }}</a></p><br>
+  {% endfor %}
+</ul> 
+
+   <!-- BANNER -->
+<!-- QUESTIONS -->
+    <section id="question" class="white">
+        <div class="container">    
+            <article class="question-left">
+                <h3 class="titre-article">how long are your contract?</h3>
+                <p class="texte-article"><strong>Art.space</strong> plans are month-to-month, yearly, or two years. We make it simple to start -- and stop-- your service at any time.</p>
+                <h3 class="titre-article">is there a discount for yearly service?<br></h3>
+                <p class="texte-article">Yes, we offer discounts on up-front long-term commitments.</p>
+                <h3 class="titre-article">do i need another web host?</h3>
+                <p class="texte-article">No. All <strong>Art.space</strong>plans  available at all times
+                <h3 class="titre-article">can i download squarespace<br></h3>
+                <p class="texte-article">No.<strong>Art.space</strong> is a fully-management web services. We do not have plans to make a downloadable version. <strong>Art.space</strong>does provide many standard methods for exporting your data.</p>
+                <h3 class="titre-article">do you offer email accounts?</h3>
+                <p class="texte-article">While <strong>Art.space</strong> does not provide email accounts, you can easily link your domain to Google Apps and get free email.</p>
+            </article>
+            
+            <article class="question-right">
+                <h3 class="titre-article">how do i sign up?</h3>
+                <p class="texte-article">You start a free trial.We don't collect your credit card until you've determined Squarespace is the right product for you.</p>
+                <h3 class="titre-article">how do i cancel service?</h3>
+                <p class="texte-article">Canceling <strong>Art.space</strong> is an easy and no-questions-asked process. It's done online right from your site manager.</p>
+                <h3 class="titre-article">can i switch plans?</h3>
+                <p class="texte-article">Yes, at any time, in your website manager. When upgrading or downgrading your website plan, you will receive either a pro-rated charge or refund, depending on the cost of your new plan.</p>
+                <h3 class="titre-article">what is meant by unlimited?</h3>
+                <p class="texte-article">Certain <strong>Art.space</strong> packages do not have resource limits for normal usage. As per our <a href="#">Terms of Service</a>, sites cannot exist for the sale purpase of file sharing. </p>
+                <h3 class="titre-article">have more questions?</h3>
+                <p class="texte-article">Our support team is available 24/7 and usully responds in well under an hour. Visit hour <a href="#">Help & Support Center</a> to contact them.</p>
+            </article>
+        </div>
+    </section>
+   
+    <!-- FOOTER -->
+     <footer id="footer-hight">
+        <div class="container">
+            <div class="footer-left">
+                <div class="product">
+                    <ul>
+                        <li><h3>product</h3></li>
+                        <li><a href="#">tour</a></li>
+                        <li><a href="#">templates</a></li>
+                        <li><a href="#">mobiles apps</a></li>
+                        <li><a href="#">developers</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <ul>
+                        <li><h3>company</h3></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">press & Media</a></li>
+                        <li><a href="#">environnement Impact</a></li>
+                        <li><a href="#">affiliate Program</a></li>
+                        <li><a href="#">terms of Service</a></li>
+                        <li><a href="#">privacy Policy</a></li>
+                        <li><a href="#">contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="community">
+                    <ul>
+                        <li><h3>community</h3><li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">help and Support</a></li>
+                        <li><a href="#">answers</a></li>
+                        <li><a href="#">workshops</a></li>
+                        <li><a href="#">service Updates</a></li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">google+</a></li>
+                        <li><a href="#">youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <button>try it free</button>
+                <p>Free 14-days trial.<br>No credit cards required.<br>24/7 support.</p>
+                <img src="{{ asset ('img/footer-truste.png') }}" alt="truste">   
+            </div> 
+        </div>
+    </footer>
+ 
+  
+    <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.11.1.min.js') }}"><script></script>
+   
+    <script type="text/javascript" src="{{ asset('js/jquery.tooltipster.min.js') }}"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+</body>
+</html>

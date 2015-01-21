@@ -1,0 +1,13 @@
+artspace_index:
+    path:     /
+    defaults: { _controller: ArtprojectBundle:Product:Index }
+artspace_categories:
+    path:     /categories
+    defaults: { _controller: ArtprojectBundle:Product:Categories }
+artspace_products:
+    path:     /products/{categorie}
+    defaults: { _controller: ArtprojectBundle:Product:Products }
+artspace_details:
+    path:     /products/details/{id}
+    defaults: { _controller: ArtprojectBundle:Product:Details }
+

@@ -1,0 +1,178 @@
+
+body{
+	width: 768px; 
+	margin:0 auto; 
+	font-family: 
+	arial, helvetica, sans-serif;
+	background-color: #fff;
+}
+.container{
+	margin: auto; 
+	padding-top: 3em; 
+}
+
+	/* HEADER*/
+
+header{
+	width:90%;
+	height:9em;
+	background-color: #fff;
+  	width: auto;
+}
+header .container{
+	margin:0 auto;
+	position: relative;
+}
+.pastille{
+	display: none;
+}
+#logo{
+	margin-right: 0;
+	height: 3em;
+	line-height: 3em;
+	position: absolute;
+	top:3em;
+	left:1em;
+	text-decoration: none;
+}
+#menu{
+	width: 70%;
+	vertical-align: top;
+	margin-right: 15em;
+	height: 3em;
+}
+#menu a{
+	color: #d4d4d4;
+	font-size: 10px;
+	font-weight: bold;
+	margin-left: 0.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+	width: 15%;
+	height:3em;
+	line-height: 3em;
+	color:white;
+	padding: 0;
+	background-color: black;
+}	
+#menu a:link,
+#menu a:visited {
+	color: #d4d4d4;
+}
+#menu a:hover,
+#menu a:active{
+   	color :#000;
+}
+  
+	/* BANNER  */
+
+#banner{
+	display: none;
+	clear:both;
+}
+
+	/* TABLE*/
+
+#table .container{
+	padding:0;
+	width:768px;
+}
+.black-left, .black-right{
+	display: inline-block;
+	width:48%;
+	vertical-align: top;
+	height:17em;
+	background-color:black;
+	padding-top: 0;
+	margin: 0 0 2em 0;
+}
+h2{
+	font-size: 1.2em;
+	vertical-align: top;
+	color:white;
+	margin: 0;
+	padding-top: 1.7em;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+}
+.price{
+	color:white;
+	padding:0;
+	margin:0;
+	position: relative;
+	font-family: time;
+}
+.dollar-right{
+	font: lighter 1.5em time;
+	height: 5em;
+	line-height: 2em;
+	position: absolute;
+	top:0.3em;
+	left:4.5em;
+	opacity: 0.7;
+}
+span{
+	opacity:0.7;
+}
+.dollar-left{
+	font: lighter 1.5em time;
+	height: 4.5em;
+	line-height: 2em;
+	position: absolute;
+	top:0.3em;
+	left:5.5em;
+	opacity: 0.7;
+}
+list-style-image: .dollar-right{
+	font: lighter 1.5em sans-serif;
+	height: 5em;
+	line-height: 2em;
+	position: absolute;
+	top:1em;
+	left:6em;
+}
+.chiffre{
+	font: normal 6em sans-serif;
+}
+.table-left, .table-right {
+	max-width:40%;
+	float:left;
+	vertical-align: top;
+	list-style: none;
+	font-weight: normal;
+	text-align: left;
+}
+.black-left{
+	float: left
+}
+.black-right{
+	float: left;
+	position: relative;
+}
+.table-left li, .table-right li{
+	width:100%;
+	background-color: #f7f7f7;
+	border: 2px solid #eaeaea;
+	height:4em;
+	line-height: 4em;
+	color:#696969;
+	margin: 0 auto;
+}
+li p{
+	width:80%;
+	margin:0 0 0 3em;
+	font-size: 0.9em;
+}
+.tooltip:hover{
+	background-color:#d4d4d4;
+}
+	/*QUESTIONS*/
+#question {
+	display:none;
+} 
+	/*FOOTER*/
+#footer-hight{
+	display: none;
+}
